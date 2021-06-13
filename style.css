@@ -9,6 +9,24 @@ body{
     background-color: #ebf2ff;
 }
 
+.button__primary{
+    background-color: #ff512f;
+    color: #fff;
+    border: none;
+    padding: 12px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+.button__primary:hover{
+    border: 2px solid blue;
+
+}
+
+.container{
+    max-width: 100%;
+    padding: 0 20px;
+    margin: 0 auto;
+}
 .navbar{
     display: flex;
     align-items: center;
@@ -39,21 +57,69 @@ body{
 
 }
 
+.hero__image__container{
+    width: 100%;
+    position: relative;
+}
+
+.hero__background__image{
+    position: absolute;
+}
+
+.hero__image{
+    width: 100%;
+    border-radius: 8px;
+    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+}
+
+.hero__text{
+    font-size: 30px;
+    margin: 20px 0;
+}
+
+
+
+
+
 @media (min-width:768px){
     .navbar{
         justify-content: space-between;
         padding: 2px 30px;
     }
+    .hero__container{
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
+        margin-top: 20px;
+        
+    }
 }
 
 @media (min-width:1020px){
+    .container{
+        max-width: 900px;
+    }
     .navbar__brand{
         width: 150px;
     }
 
-    .nav__item{
+    .button__primary{
         padding: 20px;
         font-size: 20px;
     }
+
+    .hero__description{
+        width: 100%;
+    }
+
+    .hero__text{
+        font-size: 50px;
+    }
     
+}
+
+@media (min-width:1400px){
+    .container{
+        max-width: 1250px;
+    }
 }
